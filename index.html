@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário | LM</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+ <h1><span class="type"></span></h1>
+ 
+  <div class="box">
+    <form action="">
+      <fieldset>
+        <legend><b>Formulário de Clientes</b></legend>
+      
+      <br>
+      <div class="inputBox">
+        <input type="text" name="nome" id="nome" class="inputUser" required >
+        <label for="nome" class="labelInput">Nome Completo</label>
+      </div>
+      <br><br>
+      <div class="inputBox">
+        <input type="text" name="cpf" id="cpf" class="inputUser" required maxlength="14" autocomplete="off">
+        <label for="cpf" class="labelInput">CPF</label>
+      </div>
+      <br><br>
+      <div class="inputBox">
+        <input type="text" name="email" id="email" class="inputUser" required>
+        <label for="email" class="labelInput">E-mail</label>
+      </div>
+      <br><br>
+      <div class="inputBox">
+        <input type="tel" name="telefone" id="telefone" class="inputUser" required maxlength="14" autocomplete="off">
+        <label for="tel" class="labelInput">Telefone</label>
+      </div>
+
+      <br><br>
+
+        <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+        <input type="date" name="data_nascimento" id="data_nascimento" required>
+
+      <br><br>
+      <div class="inputBox">
+        <input type="text" name="cidade" id="cidade" class="inputUser" required>
+        <label for="cidade" class="labelInput">Cidade</label>
+      </div>
+      <br><br>
+      <div class="inputBox">
+        <input type="text" name="estado" id="estado" class="inputUser" required>
+        <label for="estado" class="labelInput">Estado</label>
+      </div>
+      <br><br>
+      <div class="inputBox">
+        <input type="text" name="endereco" id="endereco" class="inputUser" required>
+        <label for="endereco" class="labelInput">Endereço</label>
+      </div>
+      <br><br>
+      <div class="inputBox">
+        <input type="text" name="observacoes" id="observacoes" class="inputUser" maxlength="300">
+        <label for="observacoes" class="labelInput">Observações</label>
+      </div>
+      <br><br>
+      <input type="submit" name="submit" id="submit">
+    </form>
+  </div>
+</fieldset>
+
+<div class="caixa">
+  <table id="tab">
+    <tr>
+      <td>Nome</td>
+      <td>CPF</td>
+      <td>Email</td>
+      <td>Telefone</td>
+      <td>Data de nascimento</td>
+      <td>Cidade</td>
+      <td>Estado</td>
+      <td>Endereço</td>
+
+    </tr>
+    <tr class="cadastro">
+      <td class="nomeInfo">
+        Luís Mateus
+      </td>
+      <td>473.077.488-41</td>
+      <td>suporte.lmba@gmail.com</td>
+      <td>(17)99766-4281</td>
+      <td>17/01/2001</td>
+      <td>Tabapuã</td>
+      <td>SP</td>
+      <td>Rua Santa Cruz</td>
+    </tr>
+    <tr class="cadastro">
+      <td class="nomeInfo">
+        Luís Mateus
+      </td>
+      <td>473.077.488-41</td>
+      <td>suporte.lmba@gmail.com</td>
+      <td>(17)99766-4281</td>
+      <td>17/01/2001</td>
+      <td>Tabapuã</td>
+      <td>SP</td>
+      <td>Rua Santa Cruz</td>
+    </tr>
+  </table>
+
+  <p style="color: black; text-align: center;"><b>&copy; Luís Mateus Billar</b></p>
+
+<script src="script.js"></script>
+<script src="typed.js"></script>
+<script>
+  var typed = new Typed('.type', {
+    strings: [`Formulário`],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true
+
+  })
+</script>
+
+</body>
+</html>
