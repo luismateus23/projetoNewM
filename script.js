@@ -144,7 +144,7 @@ button.addEventListener('click', function (event) {
 
   var cadastroTr = document.createElement('tr')
 
-  cadastroTr.classList("cadastro")
+  //cadastroTr.classList("cadastro")
   var nomeTd = document.createElement('td')
   var cpfTd = document.createElement('td')
   var emailTd = document.createElement('td')
